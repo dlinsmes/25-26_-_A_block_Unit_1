@@ -17,6 +17,7 @@ public class CashRegister {
         System.out.println("how much money do you want?");
         double amt = input.nextDouble();
         input.close();
+        System.out.println("$" + amt + " is...");
 
         //start with the largest denomination first
         //the quantity of bills should be an int bc you can't have
