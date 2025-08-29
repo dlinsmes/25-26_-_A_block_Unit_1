@@ -11,8 +11,6 @@ public class CashRegister {
         //coins - quarters, dimes, nickels, pennies
 
         //-use only concepts we've covered so far
-        //only division and modulo for math operators
-        //(no multiplication or subtraction)
         Scanner input = new Scanner(System.in);
         System.out.println("how much money do you want?");
         double amt = input.nextDouble();
