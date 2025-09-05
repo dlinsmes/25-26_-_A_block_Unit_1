@@ -4,47 +4,48 @@ public class Booleans {
     public static void main(String [] args) {
         //booleans hold true or false values
         boolean b = true;
-        System.out.println(b);
+        System.out.println("b is " + b);
 
         b = false;
-        System.out.println(b);
+        System.out.println("b is " + b);
 
         //! is negation - evaluate the opposite value
         //say as "NOT"
         b = !true;
-        System.out.println(b);
+        System.out.println("!true is " + b);
 
         //flips the current value
         b = !b;
-        System.out.println(b);
+        System.out.println("not b is " + b);
 
         // comparisons - >, <, >=, <= (less than or equal to)
         int x = 8;
+        System.out.println("x is " + x);
 
         //assign a boolean expression to a boolean variable
         //(evaluate whether x is greater than 3, then assign
         //true or false to b)
         b = x > 3;
-        System.out.println(b);
+        System.out.println("x > 3: " + b);
 
         //expressions can be negated
         //8 is not greater than 8 --> false
         //false negated is true
         b = !(x > 8);
-        System.out.println(b);
+        System.out.println("!(x > 8) is " + b);
 
         //single equals = is the assignment operator
         //double equals == is a comparison
         //-check to see whether the two values are the same
         b = x == 8;
-        System.out.println(b);
+        System.out.println("x == 8: " + b);
 
 
         //not equals
         b = x != 9;
         //equivalent to
         b = !(x == 9);
-        System.out.println(b);
+        System.out.println("!(x == 9): " + b);
 
         //math - how to check whether x is between two values
         // 4 <= x < 10;
@@ -56,32 +57,34 @@ public class Booleans {
         //-both sides of the && need to be valid standalone
         //boolean expressions
         b = 4 <= x && x < 10;
-        System.out.println(b);
+        System.out.println("4 <= x && x < 10: " + b);
 
         //both expressions must be true for an AND to evaluate
         //as true
         b = x < 4 && x > 10;
-        System.out.println(b);
+        System.out.println("x < 4 && x > 10: " + b);
 
         //OR - || - at least one of the expressions needs to be true
         b = x < 4 || x > 10;
-        System.out.println(b);
+        System.out.println("x < 4 || x > 10: " + b);
 
         x = 0;
+        System.out.println("x is " + x);
         b = x < 4 || x > 10;
-        System.out.println(b);
+        System.out.println("x < 4 || x > 10: " + b);
 
         String word = "apple";
+        System.out.println("word is " + word);
 
         //for Strings, do NOT use == - it will give
         //inconsistent results
         //-use .equals(word) instead
         b = word.equals("orange");
-        System.out.println(b);
+        System.out.println("is orange: " + b);
 
         //can be flipped
         b = "apple".equals(word);
-        System.out.println(b);
+        System.out.println("is apple: " + b);
 
         //check whether a word is NOT "apple"
 
@@ -90,6 +93,7 @@ public class Booleans {
 
         //use .equals() and negate the whole expression
         b = !word.equals("apple");
+        System.out.println("not apple: " + b);
 
         Scanner input = new Scanner (System.in);
 
