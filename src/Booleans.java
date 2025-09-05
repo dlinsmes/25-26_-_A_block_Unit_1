@@ -118,7 +118,7 @@ public class Booleans {
         b = !(user.equals("c") || user.equals("d") || user.equals("e"));
         System.out.println(b);
 
-        //deMorgan's law
+        //deMorgan's law - distribute negations
         //!(A or B) is the same as !A and !B
         //and
         //!(A and B) is the same as !A or !B
